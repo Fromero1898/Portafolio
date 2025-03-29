@@ -1,0 +1,223 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: 'Silkscreen', cursive; 
+    background-image: url('/images/bodyImage.jpg'); 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* Pantalla de introducción */
+#intro-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+#intro-gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Menú principal */
+#menu-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+    margin-left: 550px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    font-family: 'Silkscreen';
+}
+
+#gameCanvas {
+    width: 800px; 
+    height: 800px; 
+    border: 2px solid white;
+    background-color: black;
+}
+
+/* Juego principal */
+#game-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+    margin-left: 550px;
+    display: block; 
+    background-color: black; 
+}
+
+#gameStageCanvas {
+    width: 800px; 
+    height: 800px; 
+    border: 2px solid white;
+    background-color: black;
+}
+
+/* Input para ingresar el nombre */
+#name-input-container {
+    display: none; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#name-input-container p {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#player-name-input {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+/* Pantalla de High Scores */
+#high-scores-container {
+    display: none; 
+    position: absolute;
+    width: 800px; 
+    height: 800px; 
+    background-color: black; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 40px;
+    border: 2px solid gold;
+    border-radius: 10px;
+    box-shadow: 0 0 20px gold;
+}
+
+#high-scores-container h1 {
+    color: gold;
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-family: 'Silkscreen', cursive;
+}
+
+#high-scores-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#high-scores-list li {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Silkscreen', cursive;
+}
+
+/* Input para ingresar el nombre */
+#name-input-container {
+    display: none; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 40px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px white;
+}
+
+#name-input-container p {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Silkscreen', cursive;
+}
+
+#player-name-input {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    outline: none;
+    font-family: 'Silkscreen', cursive;
+}
+/*Estilos Instrucciones*/
+#instructions-screen {
+    position: fixed;
+    top: 20%;
+    left: 32%;
+    width: 700px;
+    height: 550px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Silkscreen', sans-serif;
+    border: 2px solid rgb(60, 255, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(60, 255, 0);
+}
+
+#instructions-container {
+    text-align: center;
+    max-width: 100%;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#instructions-container h2 {
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+#instructions-container p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+#back-to-menu-btn {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(60, 255, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Silkscreen', sans-serif;
+}
+
+#back-to-menu-btn:hover {
+    font-size: 20px;
+    font-family: 'Silkscreen', sans-serif;
+    background-color: black;
+    border: 2px solid rgb(60, 255, 0);
+}

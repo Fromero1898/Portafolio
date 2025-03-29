@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaga 2.0</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="/images/ship1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Pantalla de introducción -->
+    <div id="intro-screen">
+        <img id="intro-gif" src="/images/intro.gif" alt="Introducción">
+    </div>
+
+    <!-- Menú principal -->
+    <div id="menu-screen" style="display: none;">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <!-- Pantalla de Instrucciones -->
+    <div id="instructions-screen" style="display: none;">
+        <div id="instructions-container">
+            <h2>🕹️​¿Cómo Jugar?🕹️​</h2>
+            <p>1. Usa las flechas del teclado (derecha e izquierda) ⬅️ ➡️ para mover la nave hacia los lados.</p>
+            <p>2. Presiona la tecla space para disparar.</p>
+            <p>3. Elimina a los enemigos para ganar puntos.</p>
+            <p>4. Evita ser impactado por las balas enemigas.</p>
+            <p>5. Cada 5000 pts recibirás una vida extra.</p>
+            <button id="back-to-menu-btn">Volver al Menu</button>
+        </div>
+    </div>
+
+    <!-- Juego principal -->
+    <div id="game-screen" style="display: none;">
+        <canvas id="gameStageCanvas"></canvas>
+    </div>
+
+    <!-- Input para ingresar el nombre -->
+    <div id="name-input-container">
+        <p>Ingresa tu nombre:</p>
+        <input type="text" id="player-name-input" maxlength="10">
+    </div>
+
+    <!-- Pantalla de High Scores -->
+    <div id="high-scores-container">
+        <h1>HIGH SCORES</h1>
+        <ul id="high-scores-list"></ul>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
